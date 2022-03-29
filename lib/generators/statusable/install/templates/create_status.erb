@@ -1,0 +1,15 @@
+class Create<%= name.capitalize %>Statuses < ActiveRecord::Migration[7.0]
+def change
+create_table :statuses do |t|
+t.string :name
+t.string :color
+t.string :statusable_type
+t.string :slug
+t.string :bg_color
+t.datetime :deleted_at
+t.bigint :position
+
+t.timestamps
+end
+end
+end
